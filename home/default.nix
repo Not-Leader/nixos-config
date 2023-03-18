@@ -19,6 +19,7 @@
       export XMODIFIERS=@im=fcitx
       export INPUT_METHOD=fcitx
       export GLFW_IM_MODULE=ibus
+      export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
     '';
     bashrcExtra = "export EDITOR=hx";
   };
@@ -63,6 +64,10 @@
     userEmail = "not-leader1@outlook.com";
   };
 
+  services.gnome-keyring = {
+    enable = true;
+    components = [ "ssh" ];
+  };
   
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
