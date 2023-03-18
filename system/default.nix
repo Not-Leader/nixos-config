@@ -94,10 +94,12 @@
     pulse.enable = true;
   };
 
+  services.avahi.enable = true;
   services.geoclue2 = {
     enable = true;
     enableWifi = true;
   };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 

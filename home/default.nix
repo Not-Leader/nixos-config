@@ -19,6 +19,7 @@
       export XMODIFIERS=@im=fcitx
       export INPUT_METHOD=fcitx
       export GLFW_IM_MODULE=ibus
+      gammastep & # gammastep because it couldn't behave
     '';
     bashrcExtra = "export EDITOR=hx";
   };
