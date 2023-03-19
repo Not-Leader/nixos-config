@@ -19,10 +19,12 @@
           ./system
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.not-leader = ./home;
-            home-manager.extraSpecialArgs = {inherit helix; };
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.not-leader = ./home;
+              extraSpecialArgs = {inherit helix; };
+            };
           }
         ];
       };
