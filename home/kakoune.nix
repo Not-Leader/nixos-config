@@ -5,7 +5,6 @@
     enable = true;
     plugins = with pkgs.kakounePlugins; [
       kak-lsp
-      kak-surround
     ];
   };
 }
