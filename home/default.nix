@@ -6,6 +6,7 @@
   imports = [ 
     ./theme.nix 
     ./i3status-rs.nix 
+    ./kakoune.nix
   ];
   
   home.username = "not-leader";
