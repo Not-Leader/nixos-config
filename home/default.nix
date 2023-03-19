@@ -43,7 +43,6 @@
   home.packages = with pkgs; [
     zathura
     sway-contrib.grimshot
-    python311Packages.i3ipc
     neofetch
     vieb
     ranger    
