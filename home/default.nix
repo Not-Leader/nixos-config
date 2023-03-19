@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs,  ... }:
 
 let 
   my-python-packages = p: with p; [
@@ -11,6 +11,7 @@ in
   imports = [ 
     ./theme.nix 
     ./i3status-rs.nix 
+    ./helix.nix
   ];
   
   home.username = "not-leader";
@@ -28,9 +29,6 @@ in
     '';
     bashrcExtra = "export EDITOR=hx";
   };
-
-  programs.helix.enable = true;
-  programs.helix.settings.theme = "base16_default_dark";
 
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm.lua;
 

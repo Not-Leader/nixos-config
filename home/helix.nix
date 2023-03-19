@@ -1,9 +1,8 @@
-{helix, ... }:
-{config, pkgs, ...}:
+{config, pkgs, helix, ...}:
 {
   programs.helix = {
     enable = true;
-    settings.theme = "base16_default_dark";
-    package = helix.packages.{$pkgs.system}.helix;
+    settings.theme = "adwaita-dark";
+    package = helix.packages.${pkgs.system}.helix;
   };
 }

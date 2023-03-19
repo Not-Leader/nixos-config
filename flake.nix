@@ -11,7 +11,7 @@
     helix.url = "github:helix-editor/helix";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, helix, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -21,7 +21,8 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.not-leader = import ./home;
+            home-manager.users.not-leader = ./home;
+            home-manager.extraSpecialArgs = {inherit helix; };
           }
         ];
       };

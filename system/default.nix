@@ -9,6 +9,7 @@
     ./hardware-configuration.nix
     ./greetd.nix
     ./packages.nix
+    ./nix.nix
   ];
 
   # making the filesystems not broken
