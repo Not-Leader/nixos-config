@@ -1,5 +1,10 @@
 { config, pkgs, ... }:
 
+let 
+  my-python-packages = p: with p; [
+    python-lsp-server
+  ];
+in
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -56,6 +61,7 @@
     pulseaudio
     wl-clipboard
     qalculate-gtk
+    python3.withPackages my-python-packages
   ];
 
   programs.git = {
