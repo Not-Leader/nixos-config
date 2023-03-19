@@ -61,7 +61,7 @@ in
     pulseaudio
     wl-clipboard
     qalculate-gtk
-    python3.withPackages my-python-packages
+    (python3.withPackages my-python-packages)
   ];
 
   programs.git = {
