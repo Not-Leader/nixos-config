@@ -38,6 +38,7 @@
   services.gammastep = { 
     enable = true;
     provider = "geoclue2";
+    temperature.day = 6500;
   };
 
   home.packages = with pkgs; [
