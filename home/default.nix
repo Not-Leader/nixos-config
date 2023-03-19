@@ -47,7 +47,7 @@ in
   home.packages = with pkgs; [
     zathura
     sway-contrib.grimshot
-    neofetch
+    pfetch
     vieb
     ranger    
     wezterm
