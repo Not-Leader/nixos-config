@@ -21,7 +21,7 @@ input "1739:52632:MSFT0004:00_06CB:CD98_Touchpad" {
     natural_scroll enabled
     middle_emulation enabled
 }
-input "1:1:AT_Translated_Set_2_keyboard" {
+input * {
     xkb_layout us
     xkb_variant colemak_dh
 }
