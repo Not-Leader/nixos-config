@@ -17,7 +17,7 @@
     m_; (tap-hold-next-release 200 ; rmet)
 
     b_e (tap-hold 200 bspc esc)
-    q_t (tap hold 200 q tab)
+    q_t (tap-hold 200 q tab)
 )
 
 (deflayer base
