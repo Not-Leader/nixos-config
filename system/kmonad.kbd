@@ -1,5 +1,9 @@
-(defsrc 
-    a   s   d   f   g   h   j   k   l   ;
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet cmp  rctl
 )
 
 (defalias
@@ -14,6 +18,10 @@
     met_; (tap-hold-next-release 200 ; rmet)
 )
 
-(deflayer homerowmods
-    @met_a   @alt_s   @ctl_d   @sft_f   g   h   @sft_j   @ctl_k   @alt_l   @met_;
+(deflayer base
+  grv    1      2      3      4      5      6      7      8      9      0      -      =      bspc
+  tab    q      w      e      r      t      y      u      i      o      p      [      ]      \
+  caps   @met_a @alt_s @ctl_d @sft_f g      h      @sft_j @ctl_k @alt_l @met_; '      ret
+  lsft   z      x      c      v      b      n      m      ,      .      /      rsft
+  lctl   lmet   lalt                 spc                  ralt   rmet   cmp    rctl
 )
