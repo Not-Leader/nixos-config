@@ -89,7 +89,7 @@
   services.kmonad = {
     enable = true;
     keyboards.ideapad = {
-      device = "/dev/input/by-id/usb-Chicony_Electronics_Co._Ltd._Integrated_Camera_0001-event-if00";
+      device = "/dev/input/event0";
       defcfg = {
         enable = true;
         fallthrough = true;
