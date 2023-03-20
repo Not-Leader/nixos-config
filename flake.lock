@@ -111,11 +111,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1679156200,
-        "narHash": "sha256-mSY03t+ZmbQoxYUTNVodtwIS3q6ROi8cgALJxTSbcAY=",
+        "lastModified": 1679325061,
+        "narHash": "sha256-rhFhPPiknbNYOi7QTWqj/T8DNBUu31EWHfUqoRQzzwU=",
         "owner": "helix-editor",
         "repo": "helix",
-        "rev": "770496511c67cf276f0b0a292e7a82fbd1b5f778",
+        "rev": "05e7862e8fc34e2e4dd745f9dc95c1b1ab0dc20f",
         "type": "github"
       },
       "original": {
@@ -142,6 +142,28 @@
       "original": {
         "owner": "nix-community",
         "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "kmonad": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "nix",
+        "lastModified": 1673185501,
+        "narHash": "sha256-uEtWPpl9nH7QqochHo1z+giPga1zXR1Ko3dOXHIapFY=",
+        "owner": "kmonad",
+        "repo": "kmonad",
+        "rev": "3413f1be996142c8ef4f36e246776a6df7175979",
+        "type": "github"
+      },
+      "original": {
+        "dir": "nix",
+        "owner": "kmonad",
+        "repo": "kmonad",
         "type": "github"
       }
     },
@@ -283,6 +305,7 @@
       "inputs": {
         "helix": "helix",
         "home-manager": "home-manager",
+        "kmonad": "kmonad",
         "nixpkgs": "nixpkgs_2"
       }
     },

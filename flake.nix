@@ -9,12 +9,18 @@
     };
 
     helix.url = "github:helix-editor/helix";
+
+    kmonad = { 
+      url = "github:kmonad/kmonad?dir=nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, helix, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, helix, kmonad, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = {inherit kmonad; };
         modules = [ 
           ./system
           home-manager.nixosModules.home-manager
