@@ -88,13 +88,13 @@
   # kmonad config
   services.kmonad = {
     enable = true;
-    configfiles = [ ./kmonad.kbd ];
     keyboards.ideapad = {
       device = "/dev/input/by-id/usb-Chicony_Electronics_Co._Ltd._Integrated_Camera_0001-event-if00";
       defcfg = {
         enable = true;
         fallthrough = true;
       };
+      config = builtins.readFile ./kmonad.kbd;
     };
   };
 
