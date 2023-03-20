@@ -97,6 +97,11 @@
       config = builtins.readFile ./kmonad.kbd;
     };
   };
+  services.udev.extraRules =
+    ''
+      # KMonad user access to /dev/uinput
+      KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+    '';
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
