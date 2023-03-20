@@ -16,6 +16,8 @@
     ctl_k (tap-hold-next-release 200 k rctl)
     alt_l (tap-hold-next-release 200 l lalt)
     met_; (tap-hold-next-release 200 ; rmet)
+
+    b&e (tap-hold 200 bspc esc)
 )
 
 (deflayer base
@@ -23,5 +25,5 @@
   tab    q      w      e      r      t      y      u      i      o      p      [      ]      \
   caps   @met_a @alt_s @ctl_d @sft_f g      h      @sft_j @ctl_k @alt_l @met_; '      ret
   lsft   z      x      c      v      b      n      m      ,      .      /      rsft
-  lctl   lmet   lalt                 spc                  ralt   rmet   cmp    rctl
+  lctl   lmet   lalt                 spc                  @b&e   rmet   cmp    rctl
 )
