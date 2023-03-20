@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       theme = "adwaita-dark";
-      line-number = "relative";
+      editor.line-number = "relative";
     };
     package = helix.packages.${pkgs.system}.helix;
   };
