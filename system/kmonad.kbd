@@ -18,11 +18,12 @@
 
     b_e (tap-hold 200 bspc esc)
     q_t (tap-hold 200 q tab)
+    s_r (tap hold 200 spc ret)
 )
 
 (deflayer base
   tab  @q_t w    e    r    t    y    u    i    o    p    [    ]    \
   caps @m_a @a_s @c_d @s_f g    h   @s_j  @c_k @a_l @m_; '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            @b_e rmet cmp  rctl
+  lctl lmet lalt           @s_r           @b_e rmet cmp  rctl
 )
