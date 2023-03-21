@@ -6,20 +6,20 @@
 )
 
 (defalias
-    m_a (tap-hold-next-release 200 a lmet)
-    a_s (tap-hold-next-release 200 s lalt)
-    c_d (tap-hold-next-release 200 d lctl)
-    s_f (tap-hold-next-release 200 f lsft)
+    m_a (tap-hold-next-release 300 a lmet)
+    a_s (tap-hold-next-release 300 s lalt)
+    c_d (tap-hold-next-release 300 d lctl)
+    s_f (tap-hold-next-release 300 f lsft)
 
-    s_j (tap-hold-next-release 200 j rsft)
-    c_k (tap-hold-next-release 200 k rctl)
-    a_l (tap-hold-next-release 200 l lalt)
-    m_; (tap-hold-next-release 200 ; rmet)
+    s_j (tap-hold-next-release 300 j rsft)
+    c_k (tap-hold-next-release 300 k rctl)
+    a_l (tap-hold-next-release 300 l lalt)
+    m_; (tap-hold-next-release 300 ; rmet)
 
-    b_e (tap-hold 200 bspc esc)
-    q_t (tap-hold 200 q tab)
+    b_e (tap-hold 300 bspc esc)
+    q_t (tap-hold 300 q tab)
 
-    lay (tap-hold-next-release 200 lalt (layer-toggle symbol))
+    lay (tap-hold-next-release 300 lalt (layer-toggle symbol))
 )
 
 (deflayer base
