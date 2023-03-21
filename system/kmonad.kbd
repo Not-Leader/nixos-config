@@ -19,7 +19,7 @@
     b_e (tap-hold 200 bspc esc)
     q_t (tap-hold 200 q tab)
 
-    lay (tap-hold-next-release 200 lalt (layer toggle symbol))
+    lay (tap-hold-next-release 200 lalt (layer-toggle symbol))
 )
 
 (deflayer base
