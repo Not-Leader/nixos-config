@@ -48,7 +48,10 @@ in
     zathura
     sway-contrib.grimshot
     pfetch
-    vieb
+    librewolf
+    webcord
+    freetube
+    cinny-desktop
     ranger    
     wezterm
     fuzzel
