@@ -32,10 +32,6 @@ in
 
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm.lua;
 
-  xdg.configFile."Vieb/viebrc".source = ./vieb;
-  xdg.configFile."Discord/viebrc".source = ./vieb;
-  xdg.configFile."Cinny/viebrc".source = ./vieb;
-
   xdg.configFile."sway/config".source = ./sway;
 
   services.gammastep = { 
