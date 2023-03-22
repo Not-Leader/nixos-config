@@ -1,6 +1,7 @@
 " Options
 set adblocker=update
 set vimcommand="wezterm start hx"
+set search="https://searx.be/search?=%s"
  
 " Commands
 colorscheme flipped
