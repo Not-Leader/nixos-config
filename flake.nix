@@ -9,11 +9,6 @@
     };
 
     helix.url = "github:helix-editor/helix";
-
-    kmonad = { 
-      url = "github:kmonad/kmonad?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, helix, kmonad, ... }: {
