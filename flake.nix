@@ -18,7 +18,7 @@
 
   outputs = inputs@{ nixpkgs, home-manager, helix, ... }: {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      ideapad = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [ 
           ./system
