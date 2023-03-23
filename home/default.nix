@@ -69,7 +69,6 @@ in
 
   services.gnome-keyring = {
     enable = true;
-    components = [ "ssh" ];
   };
   
   # This value determines the Home Manager release that your
