@@ -20,14 +20,17 @@ in
   programs.bash = {
     enable = true;
     profileExtra = ''
-      export GTK_IM_MODULE=fcitx
-      export QT_IM_MODULE=fcitx
-      export XMODIFIERS=@im=fcitx
-      export INPUT_METHOD=fcitx
-      export GLFW_IM_MODULE=ibus
-      export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
     '';
     bashrcExtra = "export EDITOR=hx";
+  };
+  
+  home.sessionVariables = {
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+    INPUT_METHOD = "fcitx";
+    GLFW_IM_MODULE = "ibus";
+    SSH_AUTH_SOCK = "/run/user/1000/keyring/ssh";
   };
 
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm.lua;
