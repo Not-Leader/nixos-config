@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, lib, pkgs, kmonad, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports = [ 
@@ -10,7 +10,6 @@
     ./greetd.nix
     ./packages.nix
     ./nix.nix
-    kmonad.nixosModules.default
   ];
 
   # making the filesystems not broken
@@ -84,24 +83,6 @@
   #   "eurosign:e";
   #   "caps:escape" # map caps to escape.
   # };
-
-  # kmonad config
-  services.kmonad = {
-    enable = true;
-    keyboards.ideapad = {
-      device = "/dev/input/event0";
-      defcfg = {
-        enable = true;
-        fallthrough = true;
-      };
-      config = builtins.readFile ./kmonad.kbd;
-    };
-  };
-  services.udev.extraRules =
-    ''
-      # KMonad user access to /dev/uinput
-      KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
-    '';
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
