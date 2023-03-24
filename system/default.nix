@@ -101,6 +101,8 @@
     enableWifi = true;
   };
 
+  programs.adb.enable = true;
+  
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -112,7 +114,7 @@
     "networkmanager"
     "libvirtd" 
     "input"
-    "uinput" ]; # Enable ‘sudo’ for the user.
+    "adbusers" ]; # Enable ‘sudo’ for the user.
   };
 
   fonts.fonts = with pkgs; [
