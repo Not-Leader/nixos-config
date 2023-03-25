@@ -17,8 +17,8 @@
     };
 
     theme = {
-      name = "Lounge-night";
-      package = pkgs.lounge-gtk-theme;
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
     };
 
     iconTheme = {
@@ -38,7 +38,7 @@
     enable = true;
     platformTheme = "gnome";
     style = { 
-      name = "Adwaita-dark";
+      name = "adwaita-dark";
       package = pkgs.adwaita-qt;
     };
   };
