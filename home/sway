@@ -98,10 +98,10 @@ bindsym Shift+u move up
 bindsym Shift+i move right
 
 # change focus between tiling / floating windows
-bindsym d focus mode_toggle
+bindsym v focus mode_toggle
 
 # toggle tiling / floating
-bindsym Shift+d floating toggle
+bindsym Shift+v floating toggle
 
 # switch to workspace
 bindsym 1 workspace number $ws1
@@ -150,7 +150,7 @@ mode "resize" {
     bindsym Right resize grow width 10 px or 10 ppt
 
     # back to normal: Enter or Escape or $mod+r
-    bindsym t mode "default"
+    bindsym d mode "default"
 
     # to insert mode
     bindsym a mode "insert"
@@ -158,7 +158,7 @@ mode "resize" {
     # fullscreen binding to prevent not being able to see the modes
     bindsym $mod+t fullscreen toggle
 }
-bindsym t mode "resize"
+bindsym d mode "resize"
 
 # split in horizontal orientation
 bindsym h split h
@@ -170,12 +170,12 @@ bindsym k split v
 bindsym m split none
 
 # enter fullscreen mode for the focused container
-bindsym Shift+t fullscreen toggle
+bindsym Shift+d fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym a layout stacking
-bindsym r layout tabbed
-bindsym s layout toggle split
+bindsym r layout stacking
+bindsym s layout tabbed
+bindsym t layout toggle split
 
 ## Scratchpad:
 #
