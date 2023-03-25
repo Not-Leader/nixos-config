@@ -48,10 +48,6 @@ exec --no-startup-id dex-autostart --autostart --environment sway
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- swaylock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet --indicator
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status-rs
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -66,14 +62,15 @@ floating_modifier $mod
 bindsym Return exec wezterm
 
 # kill focused window
-bindsym d kill
+bindsym q kill
 
-# start dmenu (a program launcher)
-# A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindsym Shift+Semicolon exec --no-startup-id fuzzel; mode "insert"
+# a menu/leader mode
+mode "menu" {
+    bindsym e exec --no-startup-id fuzzel; mode "insert"
+    bindsym s exec --no-startup-id ./grim-menu.sh; mode "insert"
+}
+
+bindsym space mode "menu"
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -101,10 +98,10 @@ bindsym Shift+u move up
 bindsym Shift+i move right
 
 # change focus between tiling / floating windows
-bindsym space focus mode_toggle
+bindsym d focus mode_toggle
 
 # toggle tiling / floating
-bindsym Shift+space floating toggle
+bindsym Shift+d floating toggle
 
 # switch to workspace
 bindsym 1 workspace number $ws1
@@ -133,8 +130,6 @@ bindsym Shift+0 move container to workspace number $ws10
 bindsym l focus parent
 bindsym y focus child
 
-bindsym v mode "selection"
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
     # These bindings trigger as soon as you enter the resize mode
@@ -155,12 +150,15 @@ mode "resize" {
     bindsym Right resize grow width 10 px or 10 ppt
 
     # back to normal: Enter or Escape or $mod+r
-    bindsym p mode "default"
+    bindsym t mode "default"
 
+    # to insert mode
+    bindsym a mode "insert"
+    
     # fullscreen binding to prevent not being able to see the modes
     bindsym $mod+t fullscreen toggle
 }
-bindsym p mode "resize"
+bindsym r mode "resize"
 
 # split in horizontal orientation
 bindsym h split h
@@ -172,12 +170,12 @@ bindsym k split v
 bindsym m split none
 
 # enter fullscreen mode for the focused container
-bindsym t fullscreen toggle
+bindsym Shift+t fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym r layout stacking
-bindsym w layout tabbed
-bindsym f layout toggle split
+bindsym a layout stacking
+bindsym r layout tabbed
+bindsym s layout toggle split
 
 ## Scratchpad:
 #
@@ -192,17 +190,17 @@ bindsym f layout toggle split
     bindsym minus scratchpad show
 
 # reload the configuration file
-bindsym Shift+d reload
+bindsym Shift+f reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym Shift+p restart
+bindsym Shift+w restart
 # exit i3 (logs you out of your X session)
-bindsym Shift+f exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'"
+bindsym Shift+q exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'"
 
 mode "insert" {
     bindsym $mod+Return mode "default"
 
     # fullscreen binding to prevent not being able to see the modes
-    bindsym $mod+t fullscreen toggle
+    bindsym $mod+Shift+t fullscreen toggle
 }
 bindsym a mode "insert"
 

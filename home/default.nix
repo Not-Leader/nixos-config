@@ -36,6 +36,10 @@ in
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm.lua;
 
   xdg.configFile."sway/config".source = ./sway;
+  xdg.configFile."sway/grim-menu.sh" = { 
+    source = ./grim-menu.sh;
+    executable = true;
+  };
 
   services.gammastep = { 
     enable = true;
