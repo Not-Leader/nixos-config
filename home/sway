@@ -67,7 +67,7 @@ bindsym q kill
 # a menu/leader mode
 mode "menu" {
     bindsym e exec --no-startup-id fuzzel; mode "insert"
-    bindsym s exec --no-startup-id ./grim-menu.sh; mode "insert"
+    bindsym s exec --no-startup-id ~/.config/sway/grim-menu.sh; mode "insert"
 }
 
 bindsym space mode "menu"
