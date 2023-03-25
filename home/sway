@@ -158,7 +158,7 @@ mode "resize" {
     # fullscreen binding to prevent not being able to see the modes
     bindsym $mod+t fullscreen toggle
 }
-bindsym r mode "resize"
+bindsym t mode "resize"
 
 # split in horizontal orientation
 bindsym h split h
