@@ -54,7 +54,6 @@ in
     librewolf
     webcord
     freetube
-    cinny-desktop
     ranger    
     wezterm
     fuzzel
