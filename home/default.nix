@@ -33,14 +33,18 @@ in
     SSH_AUTH_SOCK = "/run/user/1000/keyring/ssh";
   };
 
-  xdg.configFile."wezterm/wezterm.lua".source = ./wezterm.lua;
+  xdg.configFile = {
+    "wezterm/wezterm.lua".source = ./wezterm.lua;
 
-  xdg.configFile."sway/config".source = ./sway;
-  xdg.configFile."sway/grim-menu.sh" = { 
-    source = ./grim-menu.sh;
-    executable = true;
+    "sway/config".source = ./sway;
+    "sway/grim-menu.sh" = { 
+      source = ./grim-menu.sh;
+      executable = true;
+    };
+
+    "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
   };
-
+  
   services.gammastep = { 
     enable = true;
     provider = "geoclue2";
