@@ -145,28 +145,6 @@
         "type": "github"
       }
     },
-    "kmonad": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "dir": "nix",
-        "lastModified": 1679771460,
-        "narHash": "sha256-puBjZbIB9+D+jKraSay/uofDJTaBI9bGLF6Bxg9YIJw=",
-        "owner": "kmonad",
-        "repo": "kmonad",
-        "rev": "97772cb718b2102047b2e0078564afe1c58cef0b",
-        "type": "github"
-      },
-      "original": {
-        "dir": "nix",
-        "owner": "kmonad",
-        "repo": "kmonad",
-        "type": "github"
-      }
-    },
     "mk-naked-shell": {
       "flake": false,
       "locked": {
@@ -305,7 +283,6 @@
       "inputs": {
         "helix": "helix",
         "home-manager": "home-manager",
-        "kmonad": "kmonad",
         "nixpkgs": "nixpkgs_2"
       }
     },
