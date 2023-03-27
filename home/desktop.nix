@@ -16,7 +16,6 @@
       type = "Application";
       icon = "freetube";
       comment = "A private YouTube client";
-      mimeType = "x-scheme-handler/freetube";
       categories = [ "Network" ];
     };
   };
