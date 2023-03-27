@@ -12,7 +12,7 @@
     freeTube = {
       name = "FreeTube";
       exec = "freetube --no-sandbox %U";
-      terminal = "false";
+      terminal = false;
       type = "Application";
       icon = "freetube";
       comment = "A private YouTube client";
