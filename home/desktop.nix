@@ -9,7 +9,7 @@
       name = "WebCord Wayland";
       type = "Application";
     };
-    freeTube = {
+    freetube = {
       name = "FreeTube Wayland";
       exec = "freetube --enable-features=UseOzonePlatform --ozone-platform=wayland --no-sandbox %U";
       terminal = false;
