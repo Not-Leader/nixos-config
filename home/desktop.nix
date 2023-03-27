@@ -4,14 +4,14 @@
     webcord = {
       categories = [ "Network" "InstantMessaging" ];
       comment = "A Discord and Fosscord electron-based client implemented without Discord API";
-      exec = "webcord";
+      exec = "webcord --enable-features=UseOzonePlatform --ozone-platform=wayland";
       icon = "webcord";
       name = "WebCord";
       type = "Application";
     };
     freeTube = {
       name = "FreeTube";
-      exec = "freetube --no-sandbox %U";
+      exec = "freetube --enable-features=UseOzonePlatform --ozone-platform=wayland --no-sandbox %U";
       terminal = false;
       type = "Application";
       icon = "freetube";
