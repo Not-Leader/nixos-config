@@ -12,6 +12,7 @@ in
     ./theme.nix 
     ./i3status-rs.nix 
     ./helix.nix
+    ./desktop.nix
   ];
   
   home.username = "not-leader";
