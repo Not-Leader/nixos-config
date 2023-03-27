@@ -15,7 +15,6 @@
       terminal = "false";
       type = "Application";
       icon = "freetube";
-      startupWMClass = "FreeTube";
       comment = "A private YouTube client";
       mimeType = "x-scheme-handler/freetube";
       categories = [ "Network" ];
