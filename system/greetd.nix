@@ -1,7 +1,10 @@
 # A Greetd thing because it's too big
-{ config, lib, pkgs, ... }:
-
-let
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}: let
   swayConfig = pkgs.writeText "greetd-sway-config" ''
     # `-l` activates layer-shell mode. Notice that `swaymsg exit` will run after gtkgreet.
     exec "${pkgs.greetd.gtkgreet}/bin/gtkgreet -l -c sway; swaymsg exit"
@@ -13,10 +16,9 @@ let
     input * {
       xkb_layout us
       xkb_variant colemak_dh
-    }    
+    }
   '';
-in
-{
+in {
   services.greetd = {
     enable = true;
     settings = {

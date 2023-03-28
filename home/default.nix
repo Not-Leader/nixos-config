@@ -1,20 +1,22 @@
-{ config, pkgs,  ... }:
-
-let 
-  my-python-packages = p: with p; [
-    python-lsp-server
-  ];
-in
 {
+  config,
+  pkgs,
+  ...
+}: let
+  my-python-packages = p:
+    with p; [
+      python-lsp-server
+    ];
+in {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  imports = [ 
-    ./theme.nix 
-    ./i3status-rs.nix 
+  imports = [
+    ./theme.nix
+    ./i3status-rs.nix
     ./helix.nix
     ./desktop.nix
   ];
-  
+
   home.username = "not-leader";
   home.homeDirectory = "/home/not-leader";
 
@@ -22,7 +24,7 @@ in
     enable = true;
     bashrcExtra = "${pkgs.pfetch}/bin/pfetch";
   };
-  
+
   home.sessionVariables = {
     GTK_IM_MODULE = "fcitx";
     QT_IM_MODULE = "fcitx";
@@ -37,15 +39,15 @@ in
     "wezterm/wezterm.lua".source = ./wezterm.lua;
 
     "sway/config".source = ./sway;
-    "sway/grim-menu.sh" = { 
+    "sway/grim-menu.sh" = {
       source = ./grim-menu.sh;
       executable = true;
     };
 
     "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
   };
-  
-  services.gammastep = { 
+
+  services.gammastep = {
     enable = true;
     provider = "geoclue2";
     temperature.day = 6500;
@@ -58,7 +60,7 @@ in
     librewolf
     webcord
     freetube
-    ranger    
+    ranger
     wezterm
     fuzzel
     nil
@@ -80,7 +82,7 @@ in
   services.gnome-keyring = {
     enable = true;
   };
-  
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
@@ -94,4 +96,3 @@ in
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
-

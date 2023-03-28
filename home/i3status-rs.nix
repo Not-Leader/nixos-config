@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
-
-{  
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   programs.i3status-rust = {
     enable = true;
     bars.status = {
@@ -25,9 +28,8 @@
           block = "net";
           device = "wlp0s20f3";
           format = " $icon $ssid ($signal_strength) ";
-
         }
-        { block = "sound"; }
+        {block = "sound";}
         {
           block = "battery";
           format = " $icon $percentage $time ";

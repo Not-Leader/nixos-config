@@ -1,8 +1,12 @@
-{config, lib, pkgs, ... }:
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   xdg.desktopEntries = {
     webcord = {
-      categories = [ "Network" "InstantMessaging" ];
+      categories = ["Network" "InstantMessaging"];
       comment = "A Discord and Fosscord electron-based client implemented without Discord API";
       exec = "webcord --enable-features=UseOzonePlatform --ozone-platform=wayland";
       icon = "webcord";
@@ -16,7 +20,7 @@
       type = "Application";
       icon = "freetube";
       comment = "A private YouTube client";
-      categories = [ "Network" ];
+      categories = ["Network"];
     };
   };
 }

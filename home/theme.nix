@@ -1,6 +1,8 @@
-{ config, pkgs, ...}:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   home.pointerCursor = {
     name = "phinger-cursors-light";
     package = pkgs.phinger-cursors;
@@ -26,18 +28,17 @@
       package = pkgs.papirus-icon-theme;
     };
 
-    cursorTheme= {
+    cursorTheme = {
       name = "phinger-cursors-light";
       package = pkgs.phinger-cursors;
       size = 16;
     };
-
   };
 
   qt = {
     enable = true;
     platformTheme = "gnome";
-    style = { 
+    style = {
       name = "adwaita-dark";
       package = pkgs.adwaita-qt;
     };
