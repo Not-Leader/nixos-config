@@ -20,7 +20,7 @@ in
 
   programs.bash = {
     enable = true;
-    bashrcExtra = "";
+    bashrcExtra = "${pkgs.pfetch}/bin/pfetch";
   };
   
   home.sessionVariables = {
