@@ -15,7 +15,7 @@
 
     font = {
       name = "Noto Sans";
-      size = 9;
+      size = 10;
     };
 
     theme = {
