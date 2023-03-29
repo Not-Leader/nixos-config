@@ -8,11 +8,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    emacs-overlay = {
-      url = "github:nix-community/emacs-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     helix.url = "github:helix-editor/helix";
   };
 
@@ -20,7 +15,6 @@
     nixpkgs,
     home-manager,
     helix,
-    emacs-overlay,
     ...
   }: {
     nixosConfigurations = {
@@ -34,7 +28,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               users.not-leader = ./home;
-              extraSpecialArgs = {inherit helix emacs-overlay;};
+              extraSpecialArgs = {inherit helix;};
             };
           }
         ];
