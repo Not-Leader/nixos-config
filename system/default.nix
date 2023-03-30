@@ -8,18 +8,11 @@
   ...
 }: {
   imports = [
-    ./hardware-configuration.nix
+    ./hardware.nix
     ./greetd.nix
     ./packages.nix
     ./nix.nix
   ];
-
-  # making the filesystems not broken
-  fileSystems = {
-    "/".options = ["compress=zstd"];
-    "/home".options = ["compress=zstd"];
-    "/nix".options = ["compress=zstd" "noatime"];
-  };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
