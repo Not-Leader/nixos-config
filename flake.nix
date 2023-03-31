@@ -27,7 +27,8 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.not-leader = (import ./home inputs);
+              users.not-leader = ./home;
+              extraSpecialArgs = {inherit helix;};
             };
           }
         ];
