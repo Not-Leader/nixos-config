@@ -59,7 +59,7 @@ in {
     pfetch
     librewolf
     webcord
-    freetube
+    ytfzf
     ranger
     wezterm
     fuzzel
