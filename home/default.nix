@@ -73,6 +73,8 @@ in {
     (pkgs.python3.withPackages my-python-packages)
   ];
 
+  programs.mpv.enable = true;
+  
   programs.git = {
     enable = true;
     userName = "not-leader";
