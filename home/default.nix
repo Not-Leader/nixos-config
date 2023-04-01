@@ -14,6 +14,7 @@ in {
     ./theme.nix
     ./i3status-rs.nix
     ./helix.nix
+    ./emacs.nix
     ./desktop.nix
   ];
 
