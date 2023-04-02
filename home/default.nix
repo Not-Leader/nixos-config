@@ -61,6 +61,7 @@ in {
     librewolf
     webcord
     ytfzf
+    sbcl
     ranger
     wezterm
     fuzzel
