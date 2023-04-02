@@ -62,8 +62,7 @@ in {
     webcord
     ytfzf
     sbcl
-    ocaml-ng.ocamlPackages_latest.ocaml
-    ocaml-ng.ocamlPackages_latest.ocaml-lsp
+    racket 
     ranger
     wezterm
     fuzzel
