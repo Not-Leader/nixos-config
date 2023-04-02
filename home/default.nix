@@ -62,7 +62,8 @@ in {
     webcord
     ytfzf
     sbcl
-    guile_3_0
+    ocaml-ng.ocamlPackages_latest.ocaml
+    ocaml-ng.ocamlPackages_latest.ocaml-lsp
     ranger
     wezterm
     fuzzel
