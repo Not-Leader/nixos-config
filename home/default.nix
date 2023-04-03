@@ -62,7 +62,7 @@ in {
     webcord
     ytfzf
     sbcl
-    guile 
+    guile_3_0 
     ranger
     wezterm
     fuzzel
