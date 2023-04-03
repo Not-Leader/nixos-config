@@ -62,7 +62,7 @@ in {
     webcord
     ytfzf
     sbcl
-    racket 
+    guile 
     ranger
     wezterm
     fuzzel
