@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   ...
 }: let
@@ -62,7 +63,8 @@ in {
     webcord
     ytfzf
     sbcl
-    guile_3_0 
+    guile_3_0
+    xonotic-sdl
     ranger
     wezterm
     fuzzel
@@ -77,7 +79,7 @@ in {
   ];
 
   programs.mpv.enable = true;
-  
+
   programs.git = {
     enable = true;
     userName = "not-leader";
