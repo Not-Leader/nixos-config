@@ -35,6 +35,7 @@ in {
     GLFW_IM_MODULE = "ibus";
     SSH_AUTH_SOCK = "/run/user/1000/keyring/ssh";
     EDITOR = "hx";
+    SDL_VIDEODRIVER = "wayland";
   };
 
   xdg.configFile = {
