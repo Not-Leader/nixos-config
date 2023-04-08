@@ -25,7 +25,7 @@
     quake = {
       categories = ["Game" "Shooter"];
       comment = "a very old shooter";
-      exec = "ezquake -basedir $HOME/nquake";
+      exec = "sh -c 'ezquake -basedir ~/nquake'";
       name = "Quake";
       type = "Application";
     };
