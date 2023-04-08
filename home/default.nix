@@ -66,6 +66,7 @@ in {
     sbcl
     guile_3_0
     xonotic-sdl
+    ezquake
     deluge-gtk
     ranger
     wezterm
