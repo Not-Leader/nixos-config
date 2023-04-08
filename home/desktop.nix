@@ -22,5 +22,12 @@
       comment = "A private YouTube client";
       categories = ["Network"];
     };
+    quake = {
+      categories = ["Game" "Shooter"];
+      comment = "a very old shooter";
+      exec = "ezquake -basedir ~/nquake";
+      name = "Quake";
+      type = "Application";
+    };
   };
 }
