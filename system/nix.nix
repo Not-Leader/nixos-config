@@ -5,6 +5,11 @@
   ...
 }: {
   nix.settings = {
+    experimental-features = ["nix-command" "flakes"];
+    trusted-users = [
+      "root"
+      "not-leader"
+    ];
     substituters = [
       "https://cache.nixos.org"
       "https://helix.cachix.org"

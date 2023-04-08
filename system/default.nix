@@ -14,8 +14,6 @@
     ./nix.nix
   ];
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
   services.deluge.enable = true;
   
   # Use the systemd-boot EFI boot loader
@@ -31,13 +29,6 @@
 
   # Set your time zone.
   time.timeZone = "Asia/Qatar";
-
-  nix.settings = {
-    trusted-users = [
-      "root"
-      "not-leader"
-    ];
-  };
 
   system.autoUpgrade = {
     enable = true;
