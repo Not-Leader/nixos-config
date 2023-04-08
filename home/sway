@@ -24,6 +24,7 @@ input "1739:52632:MSFT0004:00_06CB:CD98_Touchpad" {
 input * {
     xkb_layout us
     xkb_variant colemak_dh
+    accel_profile flat
 }
 
 # Font for window titles. Will also be used by the bar unless a different font
