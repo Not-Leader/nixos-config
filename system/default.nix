@@ -59,6 +59,8 @@
   services.spice-vdagentd.enable = true;
   programs.dconf.enable = true;
 
+  services.tlp.enable = true;
+
   # the best gui
   programs.sway.enable = true;
 
