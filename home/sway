@@ -16,7 +16,7 @@ set $mod Mod4
 # Example configuration:
 #
 input "1739:52632:MSFT0004:00_06CB:CD98_Touchpad" {
-    dwt enabled
+    dwt disabled
     tap enabled
     natural_scroll enabled
     middle_emulation enabled
@@ -24,6 +24,7 @@ input "1739:52632:MSFT0004:00_06CB:CD98_Touchpad" {
 input * {
     xkb_layout us
     xkb_variant colemak_dh
+    xkb_options ctrl:swapcaps
     accel_profile flat
 }
 
