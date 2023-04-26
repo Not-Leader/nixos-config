@@ -68,6 +68,9 @@ bindsym q kill
 
 # a menu/leader mode
 mode "menu" {
+    # to insert mode
+    bindsym a mode "insert"
+
     bindsym e exec --no-startup-id fuzzel; mode "insert"
     bindsym s exec --no-startup-id ~/.config/sway/grim-menu.sh; mode "insert"
 }
@@ -158,7 +161,7 @@ mode "resize" {
     bindsym a mode "insert"
     
     # fullscreen binding to prevent not being able to see the modes
-    bindsym $mod+t fullscreen toggle
+    bindsym $mod+Shift+d fullscreen toggle
 }
 bindsym d mode "resize"
 
