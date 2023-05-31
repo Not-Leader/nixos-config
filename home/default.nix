@@ -67,7 +67,7 @@ in {
     guile_3_0
     xonotic-sdl
     ezquake
-    prismlauncher-qt5
+    prismlauncher
     deluge-gtk
     ranger
     wezterm
