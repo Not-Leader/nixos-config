@@ -15,7 +15,6 @@
     nixpkgs,
     home-manager,
     helix,
-    emacs-overlay,
     ...
   }: {
     nixosConfigurations = {
