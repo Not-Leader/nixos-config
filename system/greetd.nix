@@ -23,7 +23,7 @@ in {
     enable = true;
     settings = {
       default_session = {
-        command = "env GTK_THEME=Adwaita-dark ${pkgs.sway}/bin/sway --config ${swayConfig}";
+        command = "/usr/bin/env GTK_THEME=Adwaita-dark ${pkgs.sway}/bin/sway --config ${swayConfig}";
       };
     };
   };
