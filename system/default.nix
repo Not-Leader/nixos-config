@@ -115,6 +115,7 @@
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
+    comic-mono
     font-awesome_4
   ];
 

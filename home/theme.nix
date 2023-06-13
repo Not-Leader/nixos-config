@@ -14,7 +14,7 @@
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
 
     font = {
-      name = "Noto Sans";
+      name = "Comic Mono";
       size = 10;
     };
 
