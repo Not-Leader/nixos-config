@@ -68,6 +68,7 @@ in {
     xonotic-sdl
     ezquake
     prismlauncher
+    minetest
     deluge-gtk
     ranger
     wezterm
