@@ -108,6 +108,7 @@
       "libvirtd"
       "input"
       "adbusers"
+      "deluge"
     ]; # Enable ‘sudo’ for the user.
   };
 
