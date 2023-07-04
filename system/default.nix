@@ -14,11 +14,6 @@
     ./nix.nix
   ];
 
-  services.deluge = { 
-    enable = true;
-    web.enable = true;
-  };
-  
   # Use the systemd-boot EFI boot loader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -108,7 +103,6 @@
       "libvirtd"
       "input"
       "adbusers"
-      "deluge"
     ]; # Enable ‘sudo’ for the user.
   };
 
