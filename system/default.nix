@@ -23,7 +23,10 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
-  hardware.opentabletdriver.enable = true;
+  hardware.opentabletdriver= {
+    enable = true;
+    daemon.enable = true;
+  };
 
   # Set your time zone.
   time.timeZone = "Asia/Qatar";
