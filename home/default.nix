@@ -61,7 +61,7 @@ in {
     sway-contrib.grimshot
     pfetch
     librewolf
-    webcord
+    webcord-vencord
     ytfzf
     sbcl
     guile_3_0
