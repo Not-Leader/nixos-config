@@ -81,6 +81,8 @@ in {
     wl-clipboard
     qalculate-gtk
     (pkgs.python3.withPackages my-python-packages)
+    blender
+    obs-studio
   ];
 
   programs.mpv.enable = true;
