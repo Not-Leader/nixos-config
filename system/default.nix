@@ -106,6 +106,8 @@
       "libvirtd"
       "input"
       "adbusers"
+      "audio"
+      "video"
     ]; # Enable ‘sudo’ for the user.
   };
 
