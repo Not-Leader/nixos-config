@@ -29,7 +29,7 @@
   };
 
   # Set your time zone.
-  time.timeZone = "Asia/Qatar";
+  time.timeZone = "Europe/London";
 
   system.autoUpgrade = {
     enable = true;
