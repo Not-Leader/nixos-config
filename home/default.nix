@@ -83,6 +83,7 @@ in {
     (pkgs.python3.withPackages my-python-packages)
     blender
     obs-studio
+    xournalpp
   ];
 
   programs.mpv.enable = true;
