@@ -33,7 +33,7 @@
 
   system.autoUpgrade = {
     enable = true;
-    flake = "/home/not-leader/config/nixos";
+    flake = "github:not-leader/nixos-config";
   };
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
