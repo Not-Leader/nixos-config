@@ -57,21 +57,15 @@ in {
   };
 
   home.packages = with pkgs; [
-    zathura
     sway-contrib.grimshot
     pfetch
-    librewolf
     webcord-vencord
     ytfzf
-    sbcl
-    guile_3_0
     xonotic-sdl
     ezquake
     prismlauncher
     minetest
     deluge-gtk
-    ranger
-    wezterm
     fuzzel
     nil
     virt-manager
@@ -81,17 +75,23 @@ in {
     wl-clipboard
     qalculate-gtk
     (pkgs.python3.withPackages my-python-packages)
-    blender
-    obs-studio
     xournalpp
   ];
 
-  programs.mpv.enable = true;
+  programs = {
+    hexchat.enable = true;
 
-  programs.git = {
-    enable = true;
-    userName = "not-leader";
-    userEmail = "not-leader1@outlook.com";
+    mpv.enable = true;
+
+    git = {
+      enable = true;
+      userName = "not-leader";
+      userEmail = "not-leader1@outlook.com";
+    };
+
+    librewolf.enable = true;
+
+    programs.wezterm.enable = true;
   };
 
   services.gnome-keyring = {
