@@ -91,7 +91,7 @@ in {
 
     librewolf.enable = true;
 
-    programs.wezterm.enable = true;
+    wezterm.enable = true;
   };
 
   services.gnome-keyring = {
