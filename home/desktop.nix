@@ -29,5 +29,12 @@
       name = "Quake";
       type = "Application";
     };
+    sameboy = {
+      categories = ["Game" "Music"];
+      comment = "music but also gameboy";
+      exec = "sameboy";
+      name = "Sameboy";
+      type = "Application";
+    };
   };
 }
