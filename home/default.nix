@@ -60,7 +60,6 @@ in {
     sway-contrib.grimshot
     pfetch
     webcord-vencord
-    ytfzf
     xonotic-sdl
     ezquake
     prismlauncher
@@ -76,6 +75,8 @@ in {
     qalculate-gtk
     (pkgs.python3.withPackages my-python-packages)
     xournalpp
+    furnace
+    sameboy
   ];
 
   programs = {
@@ -92,6 +93,8 @@ in {
     librewolf.enable = true;
 
     wezterm.enable = true;
+
+    
   };
 
   services.gnome-keyring = {
