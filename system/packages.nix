@@ -11,5 +11,6 @@
     bridge-utils
     gnome-themes-extra
     wget
+    vulkan-validation-layers
   ];
 }

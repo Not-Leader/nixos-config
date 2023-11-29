@@ -5,6 +5,7 @@
   config,
   lib,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -64,6 +65,7 @@
 
   # the best gui
   programs.sway.enable = true;
+  nixpkgs.overlays = [ inputs.nixpkgs-wayland.overlay ];
 
   # Configure keymap in X11
   services.xserver = {
