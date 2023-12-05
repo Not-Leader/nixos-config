@@ -28,6 +28,7 @@
     nixosConfigurations = {
       ideapad = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = inputs;
         modules = [
           ./system
           home-manager.nixosModules.home-manager

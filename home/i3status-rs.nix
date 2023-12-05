@@ -40,8 +40,10 @@
           format = " $timestamp.datetime(f:'%F %T') ";
         }
       ];
-      icons = "awesome4";
-      theme = "native";
+      settings = {
+        icons.icons = "awesome4";
+        theme.theme = "native";
+      };
     };
   };
 }
